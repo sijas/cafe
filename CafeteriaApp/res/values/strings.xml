@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cafeteria App</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_order_new">Make an Order</string>
+    <string name="button_view_order">View Orders</string>
+    <string name="button_manage_friends">Manage Friends</string>
+    <string name="button_support">Support</string>
+    <string name="network_error">No network connection. Please enable and Try again later</string>
+    <string name="nolist">No data available for this selection</string>
+    <string name="cart">Food Cart</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="button_signin">Sign in</string>
+    <string name="progress_dialog_message">Please Wait</string>
+    <string name="image_desc">Order your meal</string>
+    <string name="login_error">Invalid Username / Password</string>
+    <string name="login_data">login_data</string>
+    <string name="forgot">Password ?</string>
+    <string name="logout">Logout</string>
+    <string name="register">Register ?</string>
+    <string name="notempty"></string>
+    <string name="total">Total</string>
+    <string name="order">Order now</string>
+    <string name="ordersuccess">You have Successfully placed the order. Your Token number is </string>
+    <string name="preference_file_key">com.peol.cafeteriaapp.PREFERENCE_FILE_KEY</string>
+    <string name="order_error">Quantity zero for all items. Please select atleast one item.</string>
+    <string name="cancelled">Your order have been cancelled successfully.</string>
+    <string name="viewcancelled">Cancelled Orders</string>
+    <string name="viewdelivered">Delivered Order</string>
+    <string name="addfriend">+ Friend</string>
+
+</resources>

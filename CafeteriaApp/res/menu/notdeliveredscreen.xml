@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Search, should appear as action button -->
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/cart"
+        android:showAsAction="always"
+        android:title="@string/cart"/>
+    <item
+        android:showAsAction="always"
+        android:icon="@drawable/options"
+        android:title="options">
+        <menu>
+            <item
+                android:id="@+id/viewcancelled"
+                android:title="@string/viewcancelled"/>
+            <item
+                android:id="@+id/viewdelivered"
+                android:title="@string/viewdelivered"/>
+        </menu>
+    </item>
+
+</menu>

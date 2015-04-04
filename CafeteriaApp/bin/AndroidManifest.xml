@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.peol.cafeteriaapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="com.peol.cafeteriaapp.screens.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.peol.cafeteriaapp.screens.MainScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.peol.cafeteriaapp.screens.LoginScreen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.peol.cafeteriaapp.screens.CuisineList"
+            android:label="@string/app_name"
+            android:parentActivityName="com.peol.cafeteriaapp.screens.MainScreen"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainScreen" />
+        </activity>
+        <activity
+            android:name="com.peol.cafeteriaapp.screens.FoodList"
+            android:label="@string/app_name"
+            android:parentActivityName="com.peol.cafeteriaapp.screens.CuisineList"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.peol.cafeteriaapp.CuisineList" />
+        </activity>
+        <activity
+            android:name="com.peol.cafeteriaapp.screens.FoodCart"
+            android:label="@string/app_name"
+            android:parentActivityName="com.peol.cafeteriaapp.screens.MainScreen"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.peol.cafeteriaapp.MainScreen" />
+        </activity>
+        <activity
+            android:name="com.peol.cafeteriaapp.screens.ViewOrders"
+            android:label="@string/app_name"
+            android:parentActivityName="com.peol.cafeteriaapp.screens.MainScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.peol.cafeteriaapp.MainScreen" />
+        </activity>
+        <activity
+            android:name="com.peol.cafeteriaapp.screens.FriendListScreen"
+            android:label="@string/app_name"
+            android:parentActivityName="com.peol.cafeteriaapp.screens.MainScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.peol.cafeteriaapp.MainScreen" />
+        </activity>
+    </application>
+
+</manifest>
